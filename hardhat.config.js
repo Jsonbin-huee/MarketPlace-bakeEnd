@@ -13,13 +13,13 @@ require("dotenv").config()
 const MAINNET_RPC_URL =
     process.env.MAINNET_RPC_URL ||
     process.env.ALCHEMY_MAINNET_RPC_URL ||
-    "https://eth-mainnet.g.alchemy.com/v2/CyELJE8DQHF0wgF7ZGKJLgzQVnoH6igG"
+    ""
 const GOERLI_RPC_URL =
-    process.env.GOERLI_RPC_URL || "https://eth-goerli.g.alchemy.com/v2/_Q8ZY4on_XN3SJtSF0vGIZ6g11uy02Ou"
+    process.env.GOERLI_RPC_URL || ""
 const PRIVATE_KEY = process.env.PRIVATE_KEY 
 // optional
 // Your API key for Etherscan, obtain one at https://etherscan.io/
-const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "4RNKXBD87ZYQIW2DYI85FIVS3B45RMXJF7"
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || ""
 const REPORT_GAS = process.env.REPORT_GAS || false
 
 module.exports = {
